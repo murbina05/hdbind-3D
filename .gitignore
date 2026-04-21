@@ -1,0 +1,19 @@
+# Ignore everything by default
+/*
+
+# But keep these
+!src/
+!scripts/
+!tests/
+!pyproject.toml
+!requirements.txt
+!config.py
+!README.md
+!.gitignore
+
+# Within the whitelisted directories, still ignore Python cruft
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
