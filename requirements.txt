@@ -13,6 +13,8 @@ xgboost>=2.0
 torch>=2.3.0
 joblib>=1.3
 pytest>=7.4
+lmdb>=1.4
+torch-geometric>=2.5
 # Optional — RAPIDS cuML for GPU-accelerated LogisticRegression
 # Install separately: https://docs.rapids.ai/install
 # cuml-cu12>=24.02

@@ -48,6 +48,15 @@ class PocketFeaturizer(BaseFeaturizer):
     def name(self) -> str:
         return "pocket_featurizer"
 
+    @property
+    def feature_names(self) -> list[str]:
+        return [
+            "pocket_hydrophobic", "pocket_polar", "pocket_positive",
+            "pocket_negative", "pocket_aromatic", "pocket_size",
+            "MolWt", "MolLogP", "NumHBD", "NumHBA", "TPSA",
+            "NumRotBonds", "NumAromaticRings", "NumHeavyAtoms", "FractionCSP3",
+        ]
+
     def featurize_target(
         self,
         target: str,
